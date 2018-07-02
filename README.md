@@ -12,7 +12,7 @@ We maintain a central repo of packs on [download.luwrain.org](http://download.lu
 The materials which we distribute through our repo must comply the following conditions:
 
 * They must be legally clear
-* They must be worthy for the blind (of cource, they must be accessible to the blind)
+* They must be worthy for the blind (of cource, they must be accessible to them)
 
 It could be various third-party stuff
 without any requirement to give us any source materials.
