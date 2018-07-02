@@ -16,37 +16,30 @@
 
 package org.luwrain.packs;
 
+import java.io.*;
+import java.net.*;
+
 import org.luwrain.core.*;
 
-final class IndexWorker implements Worker
+public final class IndexFetching
 {
-    static private final String LOG_COMPONENT = "packs";
-    static private final String NAME = "luwrain.packs.index";
+    static public final String INDEX_URL = "http://download.luwrain.org/packs/index.xml";
 
-    @Override public void run()
+    Index fetch() throws IOException
     {
+	final URL url = new URL(INDEX_URL);
+	final InputStream is = url.openStream();
 	try {
-	    	    new IndexFetching().fetch();
-		    Log.debug(LOG_COMPONENT, "regular fetching performed successfully");
+	    final BufferedReader r = new BufferedReader(new InputStreamReader(is));
+	    String line = r.readLine();
+	    while (line != null)
+	    {
+		line = r.readLine();
+	    }
 	}
-	catch(java.io.IOException e)
-	{
-	    Log.error(LOG_COMPONENT, "unable to make a regular index fetching:" + e.getClass().getName() + ":" + e.getMessage());
+	finally {
+	    is.close();
 	}
+	return new Index();
     }
-
-    @Override public String getExtObjName()
-    {
-	return NAME;
-		}
-
-    @Override public int getLaunchPeriod()
-    {
-	return 60 * 60;
-    }
-
-    @Override public int getFirstLaunchDelay()
-    {
-	return 20;
-		}
 }
