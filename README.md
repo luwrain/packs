@@ -1,5 +1,5 @@
 
-## LUWRAIN Packs: delivering extensions to users
+# Packs: delivering extensions and updates
 
 This repository contains a packs manager:
 a component of LUWRAIN which is supposed to take care of delivering various extensions to users.
@@ -17,8 +17,8 @@ The materials which we distribute through our repo must comply the following con
 It could be various third-party stuff
 without any requirement to give us any source materials.
 
-### See also
 
-* [Main repository](https://github.com/luwrain/luwrain)
-* [Our website](http://luwrain.org/?lang=en)
-* [Our Twitter](http://twitter.com/luwrain)
+This repository is a part of the LUWRAIN project.
+LUWRAIN is a platform for the creation of apps for the blind and partially-sighted.
+Please visit [luwrain.org](http://luwrain.org/?lang=en) for further information.
+
