@@ -26,7 +26,7 @@
     <jar jarfile="jar/luwrain-packs.jar">
       <manifest>
         <section name="org/luwrain">
-          <attribute name="Extensions" value="org.luwrain.app.packs.Extension"/>
+          <attribute name="Extensions" value="org.luwrain.packs.Extension"/>
         </section>
       </manifest>
       <fileset dir="./build/main">

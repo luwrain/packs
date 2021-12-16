@@ -1,5 +1,5 @@
 /*
-   Copyright 2012-2018 Michael Pozhidaev <michael.pozhidaev@gmail.com>
+   Copyright 2012-2021 Michael Pozhidaev <msp@luwrain.org>
 
    This file is part of LUWRAIN.
 
@@ -20,12 +20,4 @@ import org.luwrain.core.*;
 
 public final class Extension extends EmptyExtension
 {
-    private final IndexWorker indexWorker = new IndexWorker();
-
-    @Override public ExtensionObject[] getExtObjects(Luwrain luwrain)
-    {
-	return new ExtensionObject[]{
-	    indexWorker,
-	};
-    }
 }
